@@ -1,5 +1,5 @@
-# React/Redux/Router Starter Project
+# React/Redux/Router Property Management Project
 
-> Provided for the students of the [Bottega Code School](https://bottega.tech/)
+> App created for to learn React Router functionality [Property Management App](https://tnob-property-management.herokuapp.com/)
 
-*Fork from [es6-webpack2-starter](https://github.com/micooz/es6-webpack2-starter)*
+<!-- *Fork from [es6-webpack2-starter](https://github.com/micooz/es6-webpack2-starter)* -->
