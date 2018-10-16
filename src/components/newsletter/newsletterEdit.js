@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 
 import NewNewsletterForm from './newsletterNewForm';
 
-export default class NewNewsletter extends Component {
+export default class EditNewsletter extends Component {
 
   onSubmit = (fields) => {
-    
     // if(button == 'submit') {
     //   // save new newsletter on the backend.  perform a post request.
     //   console.log('trying to submit to backend.');      
@@ -17,13 +16,13 @@ export default class NewNewsletter extends Component {
     this.props.history.push('/dashboard')
   }
 
-  render () {
+  render() {
     return (
       <div className='new-newsletter'>
-        <NewNewsletterForm
+        <NewNewsletterForm 
           onCancel={() => this.onCancel()}
           onSubmit={(event) => this.onSubmit(event)}
-          title='New Newsletter'
+          title='Edit Newsletter'
         />
       </div>
     );
