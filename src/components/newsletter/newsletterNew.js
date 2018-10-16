@@ -23,7 +23,7 @@ export default class NewNewsletter extends Component {
         <NewNewsletterForm
           onCancel={() => this.onCancel()}
           onSubmit={(event) => this.onSubmit(event)}
-          title='New Newsletter'
+          formTitle='New Newsletter'
         />
       </div>
     );
