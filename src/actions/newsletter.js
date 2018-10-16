@@ -3,7 +3,6 @@ import {
 } from './types';
 
 export function fetchNewsletters() {
-
   const response = {
     data: [
       {
