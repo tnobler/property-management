@@ -22,6 +22,10 @@ export default class NewRequest extends Component {
           onCancel={() => this.onCancel()}
           onSubmit={(event) => this.onSubmit(event)}
           formTitle='New Request'
+          fieldOnePlaceholder='Service Request Title Here'
+          fieldOneTitle='Service Request Title'
+          fieldTwoPlaceholder='Description Here'
+          fieldTwoTitle='Description'
         />
       </div>
     );
