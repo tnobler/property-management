@@ -8,11 +8,11 @@ export default class NewRequest extends Component {
     //   // save new newsletter on the backend.  perform a post request.
     //   console.log('trying to submit to backend.');      
     // }
-    this.props.history.push('/dashboard')
+    this.props.history.push('/dashboard');
   }
 
   onCancel = () => {
-    this.props.history.push('/dashboard')
+    this.props.history.push('/dashboard');
   }
 
   render () {
