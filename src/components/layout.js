@@ -2,14 +2,19 @@ import React, { Component } from 'react';
 import { Header, HeaderBar } from './header';
 
 
-export default class Layout extends Component {
+class Layout extends Component {
   render () {
     return (
       <div className='layout-grid'>
-        <Header/>
+        <Header
+          title='Welcome to HOA manager!'
+          subtitle='Please login to continue'
+        />
         <HeaderBar/>
         {this.props.children}
       </div>
     )
   }
 }
+
+export default Layout;
