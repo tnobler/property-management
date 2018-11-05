@@ -5,7 +5,7 @@ import * as actions from '../../actions';
 
 import Button from '../button';
 
-import RequestsBoxes from './requestBoxes';
+import RequestsBoxes from './requestsBoxes';
 import Requests from './requests';
 
 

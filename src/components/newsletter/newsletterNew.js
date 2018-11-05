@@ -7,30 +7,30 @@ import NewNewsletterForm from './newsletterNewForm';
 
 class NewNewsletter extends Component {
 
-  onSubmit = (fields) => {
+  onSubmit = fields => {
 
     const { title, body, image } = fields;
 
     var formData = new FormData();
-    formData.append('title', title)
+    formData.append('title', title);
     formData.append('body', body);
     formData.append('image', image);    
 
     this.props.createNewNewsletter(formData, () => {
       this.props.history.push('/dashboard');  
     })
-  }
+  };
 
   onCancel = () => {
-    this.props.history.push('/dashboard')
-  }
+    this.props.history.push('/dashboard');
+  };
 
   render () {
     return (
       <div className='new-newsletter'>
         <NewNewsletterForm
           onCancel={() => this.onCancel()}
-          onSubmit={(event) => this.onSubmit(event)}
+          onSubmit={event => this.onSubmit(event)}
           formTitle='New Newsletter'
           fieldOnePlaceholder='Newsletter Title'
           fieldOneTitle='Newsletter Title'
