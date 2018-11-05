@@ -7,21 +7,25 @@ import { Header, HeaderBar } from './header';
 
 class Layout extends Component {
   render () {
+    const { title, subtitle, hideBar } = this.props;
     return (
       <div className='layout-grid'>
         <Header
-          title='Welcome to HOA manager!'
-          subtitle='Please login to continue'
-        />
-        <HeaderBar/>
-        {this.props.children}
+          title={title}
+          subtitle={subtitle}
+          />
+          {this.props.hideBar ? '' : <HeaderBar/>}
+          {this.props.children}
       </div>
     )
   }
 }
 
 function mapStateToProps(state) {
-  return state;
+  const header = state.header;
+  return {
+    ...header
+  }
 }
 
 Layout = connect(mapStateToProps)(Layout);
